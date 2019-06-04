@@ -28,7 +28,6 @@ node {
             sh 'ps -ef | grep -i nginx'
             sh 'netstat -tulpn'
             sh 'cat /home/jenkins/workspace/webpage/.git/config'
-            /*sh 'cat /home/jenkins/workspace/webpage@tmp/durable*/*'*/
             sh 'sleep 100'
 
         }
