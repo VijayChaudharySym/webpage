@@ -20,7 +20,6 @@ node {
 
         app.inside {
             sh 'echo "Tests passed"'
-            sh 'sleep 60'
             sh 'cat /home/jenkins/remoting/logs/remoting.log.0'
             sh 'ps -ef'
             sh 'java -version'
@@ -28,6 +27,7 @@ node {
             sh 'ls -lrtaR /home/jenkins/'
             sh 'ps -ef | grep -i nginx'
             sh 'netstat -tulpn'
+            sh 'sleep 60'
 
         }
     }
