@@ -27,6 +27,7 @@ node {
             sh 'ls -lrtaR /home/jenkins/'
             sh 'ps -ef | grep -i nginx'
             sh 'netstat -tulpn'
+            sh 'cat /home/jenkins/workspace/webpage/.git/config'
             sh 'sleep 60'
 
         }
